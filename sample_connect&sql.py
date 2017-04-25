@@ -21,6 +21,7 @@ def sql_query(sql):
         results = c.fetchall()
     except:
         print ("Error: unable to fetch data")
+        results = []
     return results
 
 def sql_edit(sql):
